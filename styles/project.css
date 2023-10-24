@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@media (max-width: 784px) {
+  .section > header {
+    min-height: 10vh;
+  }
+  .section > header > form {
+    max-height: 4vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+  form > input[type="text"] {
+    background-size: 15px;
+    background-position: 1vh 1vh;
+    background-repeat: no-repeat;
+    padding-left: 4vw;
+    min-height: 4vh;
+  }
+
+  .block-horizontal > main {
+    padding: 0vh 1vw;
+  }
+  .textblock-with-img > img {
+    height: 60vh;
+    margin-right: 5vw;
+    margin-bottom: 2vh;
+  }
+  .textblock > .gallery {
+    display: none;
+  }
+  .textblock > button {
+    margin-top: 2vh;
+  }
+}
+@media only screen and (min-width: 785px) {
+  .section > header {
+    min-height: 15vh;
+  }
+  .section > header > form {
+    max-height: 4vh;
+    margin-left: 8vh;
+  }
+  form > input[type="text"] {
+    background-size: 15px;
+    background-position: 1vh 1vh;
+    padding-left: 2vw;
+    min-height: 4vh;
+  }
+  .textblock-with-img > img {
+    margin: 0 2vw;
+    height: 70vh;
+  }
+  .textblock > .gallery {
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery > .image {
+    position: relative;
+    margin-top: 4vh;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+    margin-left: 2vw;
+    object-fit: cover;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.56);
+  }
+  .gallery > .image:first-child {
+    margin-left: 0;
+  }
+  .textblock > button {
+    margin-top: 4vh;
+  }
+}
+/*header*/
+.section > header {
+  align-items: center;
+  min-height: 15vh;
+}
+.section > header > h1 {
+  font-family: "Oswald", sans-serif;
+}
+form > input[type="text"] {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  min-height: 4vh;
+}
+form > button > img {
+  max-width: 3vh;
+}
+
+/*main menu*/
+.section > .block > .menu {
+  margin-bottom: 2vh;
+}
+.block > .menu > li {
+  padding: 2vh 4vw;
+}
+li > a {
+  text-decoration: none;
+}
+
+/*main*/
+
+.section > .block > .block-horizontal > main > h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+.block-horizontal > main > h1 {
+  padding-bottom: 2vh;
+}
+.block-horizontal > main > .textblock-with-img {
+  display: flex;
+  flex-direction: row;
+}
+main > p {
+  margin: 2vh 0;
+}
+
+.textblock-with-img > .textblock {
+  padding-right: 0vw;
+}
+.textblock > h2 {
+  margin-bottom: 2vh;
+}
+.textblock > button {
+  padding: 1vh 1vw;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main > .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer > h3 {
+  width: 100%;
+  text-align: center;
+  padding: 1vh 0;
+}
+.footer > .social-media {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-media > a > img {
+  height: 50px;
+  width: 50px;
+}
+
+/*aside*/
+aside {
+  margin: 1vh 2vw 0;
+}
+aside > h2 {
+  width: 100%;
+  text-align: center;
+}
+aside > .card-news {
+  margin: 2vh 0;
+  padding: 2vh 1vw;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.56);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.56);
+}
+
+/*nav*/
+nav {
+  height: 40vh;
+}
+nav > .menu-expand {
+  padding-left: 2vw;
+  margin-top: 1vh;
+}
+nav > h2 {
+  width: 100%;
+  margin-top: 1vh;
+  text-align: center;
+}

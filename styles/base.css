@@ -1,0 +1,55 @@
+@media (max-width: 784px) {
+  .block-horizontal > nav {
+    display: none;
+  }
+  .section > aside {
+    order: 1;
+  }
+}
+@media only screen and (min-width: 785px) {
+  .block-horizontal > nav {
+    display: flex;
+    flex-direction: column;
+    min-width: 14%;
+  }
+  .block-horizontal > nav > ul {
+    list-style-type: none;
+  }
+  .block-horizontal > nav > ul > li > ul {
+    list-style-type: none;
+  }
+  .section > header {
+    gap: 2vw;
+  }
+}
+.section > header {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  max-width: 100%;
+}
+.section > header > form {
+  display: flex;
+  flex-direction: row;
+}
+.section > .block > .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: left;
+}
+
+.section > aside {
+  float: left;
+  min-width: 21%;
+}
+
+.section > footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}

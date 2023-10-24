@@ -1,0 +1,53 @@
+body {
+  background-color: #dae1ea;
+  color: #252627;
+}
+header {
+  background-color: #9ed8cd;
+}
+.section > header > form > input[type="text"] {
+  background-color: #dae1ea;
+  color: #252627;
+  border: 0.25px solid #3a2e39;
+}
+.section > header > form > input[type="text"]::placeholder {
+  color: #3a2e39;
+}
+.section > header > form > input[type="text"]:focus {
+  border: 1px solid #252627;
+}
+
+/*main menu*/
+.section > .block > .menu {
+  background-color: #3a2e39;
+}
+.menu > li:hover {
+  background-color: #bf8d77;
+}
+.menu > li > a:link {
+  color: #dae1ea;
+}
+.menu > li > a:visited {
+  color: #9ed8cd;
+}
+.textblock > button {
+  background-color: #bf8d77;
+  color: #9ed8cd;
+  border: 0px solid #3a2e39;
+}
+.footer > h3 {
+  background-color: #252627;
+  color: #fff;
+}
+aside > hr {
+  border: 2px dashed #3a2e39;
+}
+aside > .card-news {
+  background-color: #f2f4f8;
+}
+nav {
+  background-color: #bf8d77;
+}
+footer {
+  background-color: #445d48;
+}
