@@ -1,6 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-@media (max-width: 784px) {
+@media only screen and (max-width: 426px) {
   .section > header {
+    align-items: center;
+    min-height: 15vh;
+    justify-content: center;
+  }
+  .section > header > h1 {
+    font-size: 1.5em;
+  }
+  .section > .block > .menu {
+    font-size: 0.75em;
+  }
+  .block-horizontal > main {
+    padding: 0vh 1vw;
+  }
+  .textblock-with-img > img {
+    height: 40vh;
+    object-fit: cover;
+  }
+  .textblock > .gallery {
+    display: none;
+  }
+  .block-horizontal > main > .textblock-with-img {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .textblock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .textblock > button {
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 427px) and (max-width: 784px) {
+  .section > header {
+    align-items: center;
     min-height: 10vh;
   }
   .section > header > form {
@@ -19,6 +55,10 @@
   .block-horizontal > main {
     padding: 0vh 1vw;
   }
+  .block-horizontal > main > .textblock-with-img {
+    display: flex;
+    flex-direction: row;
+  }
   .textblock-with-img > img {
     height: 60vh;
     margin-right: 5vw;
@@ -33,6 +73,7 @@
 }
 @media only screen and (min-width: 785px) {
   .section > header {
+    align-items: center;
     min-height: 15vh;
   }
   .section > header > form {
@@ -44,6 +85,10 @@
     background-position: 1vh 1vh;
     padding-left: 2vw;
     min-height: 4vh;
+  }
+  .block-horizontal > main > .textblock-with-img {
+    display: flex;
+    flex-direction: row;
   }
   .textblock-with-img > img {
     margin: 0 2vw;
@@ -72,10 +117,7 @@
   }
 }
 /*header*/
-.section > header {
-  align-items: center;
-  min-height: 15vh;
-}
+
 .section > header > h1 {
   font-family: "Oswald", sans-serif;
 }
@@ -110,10 +152,7 @@ h4 {
 .block-horizontal > main > h1 {
   padding-bottom: 2vh;
 }
-.block-horizontal > main > .textblock-with-img {
-  display: flex;
-  flex-direction: row;
-}
+
 main > p {
   margin: 2vh 0;
 }

@@ -1,4 +1,68 @@
-@media (max-width: 784px) {
+@media only screen and (max-width: 426px) {
+  .section > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section > aside {
+    order: 1;
+  }
+  .section > header > form {
+    display: none;
+  }
+  .section > .block > .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: left;
+  }
+  .block-horizontal > nav {
+    display: none;
+  }
+  .section > footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 427px) and (max-width: 784px) {
+  .section > header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .section > .block > .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: left;
+  }
+
+  .section > aside {
+    float: left;
+    min-width: 21%;
+  }
+
+  .section > footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .section > header > form {
+    display: flex;
+    flex-direction: row;
+  }
   .block-horizontal > nav {
     display: none;
   }
@@ -7,10 +71,45 @@
   }
 }
 @media only screen and (min-width: 785px) {
+  .section > header {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .section > .block > .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: left;
+  }
+
+  .section > aside {
+    float: left;
+    min-width: 21%;
+  }
+
+  .section > footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .section > header > form {
+    display: flex;
+    flex-direction: row;
+  }
+  .block-horizontal {
+    overflow: hidden;
+  }
   .block-horizontal > nav {
     display: flex;
     flex-direction: column;
-    min-width: 14%;
+    min-width: 15%;
   }
   .block-horizontal > nav > ul {
     list-style-type: none;
@@ -21,35 +120,4 @@
   .section > header {
     gap: 2vw;
   }
-}
-.section > header {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  max-width: 100%;
-}
-.section > header > form {
-  display: flex;
-  flex-direction: row;
-}
-.section > .block > .menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  justify-content: left;
-}
-
-.section > aside {
-  float: left;
-  min-width: 21%;
-}
-
-.section > footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
 }
